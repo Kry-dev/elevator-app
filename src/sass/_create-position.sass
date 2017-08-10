@@ -1,0 +1,76 @@
+.create-pos-wrap
+  display: flex
+  background: darken($white, .6)
+  .create-pos-list
+    list-style: none
+    width: 100%
+    li
+      padding: 1.7em 2em
+    .create-pos-item
+      padding: 0
+      display: block
+      width: 100%
+      border-bottom: 2px solid $grey
+      .selling-box
+        display: flex
+        width: 80%
+        margin: 0 auto
+        justify-content: center
+        background: $white
+        border: 2px solid $light-blue
+        border-radius: 1.8em
+      .btm-im
+        width: 50%
+        font-size: 1.4em
+        text-align: center
+        padding: .5em 2em
+        color: $light-blue
+        border-radius: 1.5em
+        border: 2px solid transparent
+        &:hover,&:active
+          background: $light-blue
+          color: $white
+  .create-pos-value
+    padding: 0 2em
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    p
+      padding: 1.3em 0
+      font-size: 1.4em
+    .position-name
+      color: $dark-grey
+    .position-value
+      color: $grey
+    .position-value-box
+      cursor: pointer
+      padding: 0 15px
+      .fa
+        font-size: 2em
+        color: $grey
+      &:hover,&:active
+        .fa
+          color: $light-blue
+    .posit-gost-btn
+      cursor: pointer
+      width: 100px
+      height: 60px
+      position: relative
+      background: transparent
+      border: 2px solid $grey
+      border-radius: 2em
+      &:before
+        content: ""
+        position: absolute
+        display: block
+        width: 57px
+        height: 56px
+        top: 10px
+        left: -2px
+        top: -2px
+        border: 2px solid $grey
+        border-radius: 50%
+        background: $white
+
+
