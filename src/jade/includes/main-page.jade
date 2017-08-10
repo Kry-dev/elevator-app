@@ -1,0 +1,50 @@
+section.currency-wrap
+    button(onclick="prev()").slider-btn &#10094;
+    ul.curren-type-list
+        li.currency-item
+            .curr-item-type
+                p.curr-name USD
+                p.curr-date 22/07
+            .curr-value-box
+                .curr-bank-value
+                    p.bank-name НБУ
+                    p.bank-value.arrow-down 25.92
+                .curr-bank-value
+                    p.bank-name Межбанк
+                    p.bank-value 25.87
+                    p.bank-value 25.89
+                .curr-bank-value
+                    p.bank-name Наличный
+                    p.bank-value.arrow-down 25.85
+                    p.bank-value 25.92
+
+    button(onclick="next()").slider-btn &#10095;
+section.positions-nav
+    ul.posits-nav-list
+        li.positions-nav
+            a(href="main-page--create-posit.html").posits-nav-link
+                i.fa.fa-plus
+                span.posits-link-text Создать позицию
+                span.posits-link-value
+                span.arrow-right &#10095;
+        li.positions-nav
+            a.posits-nav-link
+                i.fa.fa-tag
+                span.posits-link-text Мои позиции
+                span.posits-link-value 0
+                span.arrow-right &#10095;
+        li.positions-nav
+            a.posits-nav-link
+                i.fa.fa-puzzle-piece
+                span.posits-link-text Релевантные позиции
+                span.posits-link-value 0
+                span.arrow-right &#10095;
+        li.positions-nav
+            a.posits-nav-link
+                i.fa.fa-star
+                span.posits-link-text Избранное
+                span.posits-link-value 0
+                span.arrow-right &#10095;
+section#map-wrap
+    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41683.17342573668!2d28.43461462093683!3d49.23472870739364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b65195a6489%3A0xcbd4e159eedd74fe!2z0JLQuNC90L3QuNGG0LAsINCS0LjQvdC90LjRhtC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDIxMDAw!5e0!3m2!1sru!2sru!4v1502373516713" width="100%" height="220" frameborder="0" style="border:0" allowfullscreen)
+    a(href="#").map-btn Карта

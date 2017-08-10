@@ -1,0 +1,18 @@
+doctype html
+
+html.no-js
+
+  include includes/head
+
+  body
+    .svg-placeholder(style="height: 0; width: 0; position: absolute; visibility: hidden")
+    script(type='text/javascript').
+      document.querySelector('.svg-placeholder').innerHTML = SVG_SPRITE;
+
+    include includes/header
+
+    main.content
+      .wrapper
+        include includes/main-page
+
+    include includes/footer
