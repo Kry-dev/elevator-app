@@ -1,11 +1,9 @@
 .create-pos-wrap
   display: flex
-  background: darken($white, .6)
+  background: darken($white, .2)
   .create-pos-list
     list-style: none
     width: 100%
-    li
-      padding: 1.7em 2em
     .create-pos-item
       padding: 0
       display: block
@@ -30,6 +28,8 @@
         &:hover,&:active
           background: $light-blue
           color: $white
+    .btn-box
+      padding: 1em 2em
   .create-pos-value
     padding: 0 2em
     display: flex
@@ -66,11 +66,20 @@
         display: block
         width: 57px
         height: 56px
-        top: 10px
         left: -2px
-        top: -2px
-        border: 2px solid $grey
+        top: -1px
+        border: 1px solid $grey
         border-radius: 50%
         background: $white
+        -webkit-box-shadow: -8px 10px 24px -8px rgba(0,0,0,0.3)
+        -moz-box-shadow: -8px 10px 24px -8px rgba(0,0,0,0.3)
+        box-shadow: -8px 10px 24px -8px rgba(0,0,0,0.3)
+      &:focus
+        border: 2px solid $light-blue
+      &:active
+        background: $light-blue
+        transition: transform 1s ease-in-out
+      &:active:before
+          left: 38px !important
 
 

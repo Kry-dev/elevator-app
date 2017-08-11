@@ -1,0 +1,103 @@
+.myprofile
+  display: flex
+  flex: 1
+  background: darken($white, 1)
+  justify-content: center
+  flex-direction: column
+  .photo-user-section
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 1.5em 0
+    .photo-user-box
+      display: flex
+      width: 140px
+      height: 140px
+      border-radius: 50%
+      background: $grey
+      margin-bottom: 1em
+      overflow: hidden
+      img
+        display: block
+        width: 100%
+        position: relative
+        &:before
+          content: ""
+          display: block
+          width: 50%
+          height: 50%
+          margin-left: -25%
+          position: absolute
+          left: 50%
+          top: 50%
+          margin-top: -25%
+          background-image: url(../img/svg/icons/picture.svg)
+          background-repeat: no-repeat
+          background-size: contain
+    .user-name
+      font-size: 1.8em
+      color: $blue
+
+  .profile-contats-box
+    width: 90%
+    margin: 0 auto
+    border-top: 2px solid $grey
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    a
+      display: block
+      width: 100%
+      padding: .5em 0
+      font-size: 1.8em
+      color: $blue
+      .fa
+        margin-right: 2em
+        color: $light-blue
+      .user-mail
+        color: $dark-grey
+  .delivery-pl-box
+    display: flex
+    width: 100%
+    background: $white
+    padding: 1em 2em
+    flex-direction: column
+    .del-pl-value
+      cursor: pointer
+      display: flex
+      flex: 1 0  auto
+      justify-content: space-between
+      flex-direction: row
+      font-size: 2em
+      padding: 0.5em 0
+      color: $dark-blue
+      border-bottom: 2px solid $grey
+      &:hover
+      .places-descr
+        width: 80%
+      .fa
+        color: $grey
+  .delivery-btn-box
+    display: flex
+    width: 100%
+    background: $white
+    padding: 1em 0
+    justify-content: space-around
+    flex-direction: column
+    align-items: center
+    a
+      cursor: pointer
+      width: 80%
+      margin: 1em auto 0
+      text-align: center
+      padding: 0.8em 2em
+      font-size: 1.4em
+      color: $blue
+      border: 2px solid $blue
+      border-radius: 2em
+      &:hover
+        color: $white
+        border: 2px solid transparent
+        background: $blue

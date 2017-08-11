@@ -1,6 +1,6 @@
 export default {
   init() {
-    const projectName = 'Andylight';
+    const projectName = 'Elevator-app';
     this.showMessage(`${projectName} works!`);
   },
   showMessage(message) {
