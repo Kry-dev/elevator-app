@@ -2,6 +2,7 @@ html
   max-width: $layout-mobile-width-max
   height: 100%
   margin: 0 auto
+  font-size: 100%
 
 body
   display: flex
@@ -18,11 +19,23 @@ a
   background: $body-bg
   color: $select-text-color
 
-
 .content
   flex: 1 0 auto
+  display: flex
+  overflow: auto
 
 .wrapper
   max-width: $layout-mobile-width-max
   margin: 0 auto
+  display: flex
+  flex: auto
+  flex-direction: column
+
+.header
+  .wrapper
+    justify-content: center
+  .h1
+    font-size: 2em
+    display: block
+    text-align: center
 

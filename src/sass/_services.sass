@@ -1,0 +1,181 @@
+@mixin top-btn-box
+  margin: 0 auto
+  justify-content: center
+  border-radius: 1.8em
+  position: absolute
+  width: 60%
+  top: 20%
+  left: 20%
+  border: 2px solid $light-blue
+  background: $white
+  display: flex
+  .serv-top-btn
+    width: 50%
+    font-size: 1.4em
+    text-align: center
+    color: $light-blue
+    border-radius: 1.5em
+    padding: 0.5em 1em
+    border: 2px solid transparent
+    z-index: 50
+    &:hover
+      background: $light-blue
+      color: $white
+    &:active,
+    &.active
+      background: $light-blue
+      color: $white
+
+.header-search-box
+  display: block
+  position: absolute
+  right: 2.5em
+  bottom: 0.5em
+  font-size: 3em
+  color: $light-blue
+  &:hover
+    color: $dark-blue
+
+.header-filter-box
+  display: block
+  position: absolute
+  right: 1em
+  bottom: 0.5em
+  font-size: 3em
+  color: $red
+  &:hover
+    color: $magenta
+
+.services-map-wrap
+  flex: auto
+  display: -webkit-flex
+  display: flex
+  width: 100%
+  height: 100%
+  position: relative
+  .gm-style-iw
+    overflow: visible !important
+    div
+      overflow: visible !important
+
+  .top-btn-box
+    @include top-btn-box
+  .elev-item
+    display: block
+    position: absolute
+    width: 2em
+    height: 2em
+    left: 50%
+    margin-left: -1em
+    margin-top: -1em
+    top: 50%
+    background: transparent
+    z-index: 500
+    cursor: pointer
+    color: $blue
+    &:hover
+      color: $light-blue
+    .fa
+      font-size: 2em
+      display: block
+      z-index: 600
+
+.services-map-wrap-item
+  width: 100%
+  display: flex
+  flex: 1
+  position: relative
+  .top-btn-box
+    @include top-btn-box
+
+.serv-item-inf-box
+  display: flex
+  height: 100%
+  width: 100%
+  flex: 2
+  .item-inf-list
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    list-style-type: none
+    display: flex
+    width: 100%
+    height: 100%
+    background: $white
+  .services-inf-item
+    display: flex
+    flex-direction: row
+    width: 100%
+    position: relative
+    .s-inf-link-close
+      padding: .5em 2em
+      right: 0
+      width: 100%
+      text-align: right
+      border-bottom: 2px solid $grey
+      cursor: pointer
+      color: $grey
+      .fa
+        font-size: 2em
+      &:hover
+        color: $blue
+    .s-inf-link
+      display: flex
+      flex: auto
+      flex-direction: row
+      justify-content: space-between
+      width: 100%
+      cursor: pointer
+      padding: .5em 1em
+      border-bottom: 2px solid $grey
+      color: $blue
+      font-size: 2em
+      &:hover
+        background: darken($white, 10%)
+      .fa
+        text-align: right
+  .services-inf-item-list
+    display: flex
+    flex-direction: column
+    width: 100%
+    position: relative
+    .s-inf-link
+      display: flex
+      flex: auto
+      flex-direction: row
+      justify-content: space-between
+      width: 100%
+      cursor: pointer
+      padding: .5em 1em
+      color: $dark-grey
+      font-size: 2em
+      &:hover
+        background: darken($white, 10%)
+      .fa
+        text-align: right
+    .inner-item-list
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 100%
+      list-style-type: none
+      color: $blue
+      font-size: 1.5em
+      border-bottom: 2px solid $grey
+      .inner-list-item
+        display: flex
+        width: 100%
+        border-bottom: 2px solid $grey
+        &:last-child
+          border-bottom: none
+      .inner-item-link
+        display: flex
+        width: 100%
+        justify-content: space-between
+        cursor: pointer
+        padding: .5em 1.3em .5em 3em
+        &:hover
+          background: darken($white, 10%)
+        .fa
+          text-align: right
+          font-size: 1.5em

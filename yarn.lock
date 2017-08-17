@@ -3768,6 +3768,7 @@ isstream@~0.1.2:
     jstransformer "0.0.2"
     mkdirp "~0.5.0"
     transformers "2.1.0"
+    uglify-js "^2.4.19"
     void-elements "~2.0.1"
     with "~4.0.0"
 
@@ -4390,6 +4391,10 @@ map-obj@^1.0.0, map-obj@^1.0.1:
 map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
+
+map@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/map/-/map-1.0.1.tgz#98aa24c25dc5f68f1a9e0a91ee2ff0816334ac56"
 
 marked-terminal@^1.6.2:
   version "1.7.0"
