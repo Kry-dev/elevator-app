@@ -129,7 +129,7 @@
       padding: .5em 1em
       border-bottom: 2px solid $grey
       color: $blue
-      font-size: 2em
+      font-size: 1.8em
       &:hover
         background: darken($white, 10%)
       .fa
@@ -148,7 +148,7 @@
       cursor: pointer
       padding: .5em 1em
       color: $dark-grey
-      font-size: 2em
+      font-size: 1.8em
       &:hover
         background: darken($white, 10%)
       .fa
@@ -160,7 +160,7 @@
       width: 100%
       list-style-type: none
       color: $blue
-      font-size: 1.5em
+      font-size: 1.2em
       border-bottom: 2px solid $grey
       .inner-list-item
         display: flex
@@ -173,9 +173,107 @@
         width: 100%
         justify-content: space-between
         cursor: pointer
-        padding: .5em 1.3em .5em 3em
+        padding: .5em 1.6em .5em 3em
         &:hover
           background: darken($white, 10%)
         .fa
           text-align: right
           font-size: 1.5em
+
+
+#map
+  display: flex
+  width: 100%
+  height: 100%
+  .gm-style
+    width: 100%
+    height: 100%!important
+    position: relative!important
+    bottom: 0!important
+    div:last-child
+      width: 10px
+      height: 100%
+      margin: 0 !important
+      position: relative!important
+      &:nth-child(2)
+        display: none!important
+      .gm-style-mtc
+        position: absolute
+        width: 200px !important
+        float: none !important
+        display: block !important
+        &:nth-child(1)
+          bottom: 20% !important
+          left: 30px !important
+        &:last-child
+          bottom: -85% !important
+          left: 30px !important
+        div
+          font-size: 1.8em!important
+          color: $light-blue!important
+          background: rgba($white, .9) !important
+          font-weight: normal !important
+          border: 2px solid $light-blue !important
+          border-radius: 1em !important
+          &:hover
+            background: $white !important
+          &:active, &:focus
+            background: darken($white, .2) !important
+  .gm-svpc
+    display: none !important
+  .gm-style-cc
+      display: none !important
+      div
+        display: none !important
+
+  .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom
+    width: 80px !important
+    height: 200px!important
+    box-shadow: none!important
+    margin: 0 !important
+    left: 85%!important
+    right: 0!important
+    top: 40%!important
+    bottom: 0 !important
+    .gmnoprint
+      div
+        width: 80px!important
+        height: 200px !important;
+        position: absolute
+        right: 5% !important
+        bottom: 30% !important
+        background: none !important
+        box-shadow: none!important
+        div
+          width: 80px !important
+          height: 80px !important
+          background: rgba($white, .9) !important
+          margin-bottom: 2em !important
+          border: 2px solid $light-blue
+          border-radius: 50%
+          position: relative
+          &:hover,
+          &:active
+            background: $white !important
+          &:focus
+            outline: none!important
+          &:before
+            color: $light-blue
+            position: absolute
+            width: 40px
+            height: 40px
+            top: 10px
+            left: 17px
+            text-align: center
+            font-size: 4em
+          &:nth-child(2)
+            display: none
+          &:first-child:before
+            content: "+"
+            font-size: 3em
+            top: 18px
+          &:last-child:before
+            content: "-"
+
+          img,div
+            display: none !important

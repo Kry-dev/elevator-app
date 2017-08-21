@@ -13,8 +13,26 @@ footer.footer
                 i.fa.fa-paperclip
                 span Сервисы
         li.main-nav
-            a(href="help.html").main-nav-link
+            a(href="#").main-nav-link
                 i.fa.fa-question-circle
                 span Помощь
-script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWI4GUmwao6uuUCQ2E6XyI3jPr1RtHUJI&callback")
+
+
+script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places")
+script.
+    var map;
+    var mapCoordinates = new google.maps.LatLng(49.233083, 28.4682169);
+
+    function initialize() {
+        var mapOptions = {
+            backgroundColor: "#ffffff",
+            zoom: 8,
+            disableDefaultUI: false,
+            center: mapCoordinates,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map(document.getElementById('map'),mapOptions);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
 script(src="js/app.bundle.js")
